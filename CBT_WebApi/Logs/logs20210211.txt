@@ -1,0 +1,242 @@
+2021-02-11 12:06:22.463 +01:00 [FTL] Application start-up failed
+System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: CBT_WebApi.Interfaces.ICandidateRepository Lifetime: Scoped ImplementationType: CBT_WebApi.Repository.CandidateRepository': Unable to resolve service for type 'CBT_WebApi.Models.CbtAppDbContext' while attempting to activate 'CBT_WebApi.Repository.CandidateRepository'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: CBT_WebApi.Interfaces.ICandidateRepository Lifetime: Scoped ImplementationType: CBT_WebApi.Repository.CandidateRepository': Unable to resolve service for type 'CBT_WebApi.Models.CbtAppDbContext' while attempting to activate 'CBT_WebApi.Repository.CandidateRepository'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'CBT_WebApi.Models.CbtAppDbContext' while attempting to activate 'CBT_WebApi.Repository.CandidateRepository'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type serviceType, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(IEnumerable`1 serviceDescriptors, IServiceProviderEngine engine, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(IEnumerable`1 serviceDescriptors, IServiceProviderEngine engine, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(IServiceCollection services, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.DefaultServiceProviderFactory.CreateServiceProvider(IServiceCollection containerBuilder)
+   at Microsoft.Extensions.Hosting.Internal.ServiceFactoryAdapter`1.CreateServiceProvider(Object containerBuilder)
+   at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at CBT_WebApi.Program.Main(String[] args) in C:\Users\admin\source\repos\CBT_WebApi\CBT_WebApi\Program.cs:line 30
+2021-02-11 12:26:25.156 +01:00 [FTL] Application start-up failed
+System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: CBT_WebApi.Interfaces.ICandidateRepository Lifetime: Transient ImplementationType: CBT_WebApi.Repository.CandidateRepository': Unable to resolve service for type 'CBT_WebApi.Models.CbtAppDbContext' while attempting to activate 'CBT_WebApi.Repository.CandidateRepository'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: CBT_WebApi.Interfaces.ICandidateRepository Lifetime: Transient ImplementationType: CBT_WebApi.Repository.CandidateRepository': Unable to resolve service for type 'CBT_WebApi.Models.CbtAppDbContext' while attempting to activate 'CBT_WebApi.Repository.CandidateRepository'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'CBT_WebApi.Models.CbtAppDbContext' while attempting to activate 'CBT_WebApi.Repository.CandidateRepository'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type serviceType, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(IEnumerable`1 serviceDescriptors, IServiceProviderEngine engine, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(IEnumerable`1 serviceDescriptors, IServiceProviderEngine engine, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(IServiceCollection services, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.DefaultServiceProviderFactory.CreateServiceProvider(IServiceCollection containerBuilder)
+   at Microsoft.Extensions.Hosting.Internal.ServiceFactoryAdapter`1.CreateServiceProvider(Object containerBuilder)
+   at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at CBT_WebApi.Program.Main(String[] args) in C:\Users\admin\source\repos\CBT_WebApi\CBT_WebApi\Program.cs:line 30
+2021-02-11 12:29:10.685 +01:00 [FTL] Application start-up failed
+System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: CBT_WebApi.Interfaces.ICandidateRepository Lifetime: Transient ImplementationType: CBT_WebApi.Repository.CandidateRepository': Unable to resolve service for type 'CBT_WebApi.Models.CbtAppDbContext' while attempting to activate 'CBT_WebApi.Repository.CandidateRepository'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: CBT_WebApi.Interfaces.ICandidateRepository Lifetime: Transient ImplementationType: CBT_WebApi.Repository.CandidateRepository': Unable to resolve service for type 'CBT_WebApi.Models.CbtAppDbContext' while attempting to activate 'CBT_WebApi.Repository.CandidateRepository'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'CBT_WebApi.Models.CbtAppDbContext' while attempting to activate 'CBT_WebApi.Repository.CandidateRepository'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type serviceType, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(IEnumerable`1 serviceDescriptors, IServiceProviderEngine engine, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(IEnumerable`1 serviceDescriptors, IServiceProviderEngine engine, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(IServiceCollection services, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.DefaultServiceProviderFactory.CreateServiceProvider(IServiceCollection containerBuilder)
+   at Microsoft.Extensions.Hosting.Internal.ServiceFactoryAdapter`1.CreateServiceProvider(Object containerBuilder)
+   at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at CBT_WebApi.Program.Main(String[] args) in C:\Users\admin\source\repos\CBT_WebApi\CBT_WebApi\Program.cs:line 30
+2021-02-11 12:29:15.978 +01:00 [FTL] Application start-up failed
+System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: CBT_WebApi.Interfaces.ICandidateRepository Lifetime: Transient ImplementationType: CBT_WebApi.Repository.CandidateRepository': Unable to resolve service for type 'CBT_WebApi.Models.CbtAppDbContext' while attempting to activate 'CBT_WebApi.Repository.CandidateRepository'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: CBT_WebApi.Interfaces.ICandidateRepository Lifetime: Transient ImplementationType: CBT_WebApi.Repository.CandidateRepository': Unable to resolve service for type 'CBT_WebApi.Models.CbtAppDbContext' while attempting to activate 'CBT_WebApi.Repository.CandidateRepository'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'CBT_WebApi.Models.CbtAppDbContext' while attempting to activate 'CBT_WebApi.Repository.CandidateRepository'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type serviceType, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(IEnumerable`1 serviceDescriptors, IServiceProviderEngine engine, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(IEnumerable`1 serviceDescriptors, IServiceProviderEngine engine, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(IServiceCollection services, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.DefaultServiceProviderFactory.CreateServiceProvider(IServiceCollection containerBuilder)
+   at Microsoft.Extensions.Hosting.Internal.ServiceFactoryAdapter`1.CreateServiceProvider(Object containerBuilder)
+   at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at CBT_WebApi.Program.Main(String[] args) in C:\Users\admin\source\repos\CBT_WebApi\CBT_WebApi\Program.cs:line 30
+2021-02-11 12:29:23.533 +01:00 [FTL] Application start-up failed
+System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: CBT_WebApi.Interfaces.ICandidateRepository Lifetime: Transient ImplementationType: CBT_WebApi.Repository.CandidateRepository': Unable to resolve service for type 'CBT_WebApi.Models.CbtAppDbContext' while attempting to activate 'CBT_WebApi.Repository.CandidateRepository'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: CBT_WebApi.Interfaces.ICandidateRepository Lifetime: Transient ImplementationType: CBT_WebApi.Repository.CandidateRepository': Unable to resolve service for type 'CBT_WebApi.Models.CbtAppDbContext' while attempting to activate 'CBT_WebApi.Repository.CandidateRepository'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'CBT_WebApi.Models.CbtAppDbContext' while attempting to activate 'CBT_WebApi.Repository.CandidateRepository'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type serviceType, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(IEnumerable`1 serviceDescriptors, IServiceProviderEngine engine, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(IEnumerable`1 serviceDescriptors, IServiceProviderEngine engine, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(IServiceCollection services, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.DefaultServiceProviderFactory.CreateServiceProvider(IServiceCollection containerBuilder)
+   at Microsoft.Extensions.Hosting.Internal.ServiceFactoryAdapter`1.CreateServiceProvider(Object containerBuilder)
+   at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at CBT_WebApi.Program.Main(String[] args) in C:\Users\admin\source\repos\CBT_WebApi\CBT_WebApi\Program.cs:line 30
+2021-02-11 12:29:29.386 +01:00 [FTL] Application start-up failed
+System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: CBT_WebApi.Interfaces.ICandidateRepository Lifetime: Transient ImplementationType: CBT_WebApi.Repository.CandidateRepository': Unable to resolve service for type 'CBT_WebApi.Models.CbtAppDbContext' while attempting to activate 'CBT_WebApi.Repository.CandidateRepository'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: CBT_WebApi.Interfaces.ICandidateRepository Lifetime: Transient ImplementationType: CBT_WebApi.Repository.CandidateRepository': Unable to resolve service for type 'CBT_WebApi.Models.CbtAppDbContext' while attempting to activate 'CBT_WebApi.Repository.CandidateRepository'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'CBT_WebApi.Models.CbtAppDbContext' while attempting to activate 'CBT_WebApi.Repository.CandidateRepository'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type serviceType, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(IEnumerable`1 serviceDescriptors, IServiceProviderEngine engine, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(IEnumerable`1 serviceDescriptors, IServiceProviderEngine engine, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(IServiceCollection services, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.DefaultServiceProviderFactory.CreateServiceProvider(IServiceCollection containerBuilder)
+   at Microsoft.Extensions.Hosting.Internal.ServiceFactoryAdapter`1.CreateServiceProvider(Object containerBuilder)
+   at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at CBT_WebApi.Program.Main(String[] args) in C:\Users\admin\source\repos\CBT_WebApi\CBT_WebApi\Program.cs:line 30
+2021-02-11 12:30:45.520 +01:00 [FTL] Application start-up failed
+System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: CBT_WebApi.Interfaces.ICandidateRepository Lifetime: Transient ImplementationType: CBT_WebApi.Repository.CandidateRepository': Unable to resolve service for type 'CBT_WebApi.Models.CbtAppDbContext' while attempting to activate 'CBT_WebApi.Repository.CandidateRepository'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: CBT_WebApi.Interfaces.ICandidateRepository Lifetime: Transient ImplementationType: CBT_WebApi.Repository.CandidateRepository': Unable to resolve service for type 'CBT_WebApi.Models.CbtAppDbContext' while attempting to activate 'CBT_WebApi.Repository.CandidateRepository'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'CBT_WebApi.Models.CbtAppDbContext' while attempting to activate 'CBT_WebApi.Repository.CandidateRepository'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type serviceType, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(IEnumerable`1 serviceDescriptors, IServiceProviderEngine engine, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(IEnumerable`1 serviceDescriptors, IServiceProviderEngine engine, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(IServiceCollection services, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.DefaultServiceProviderFactory.CreateServiceProvider(IServiceCollection containerBuilder)
+   at Microsoft.Extensions.Hosting.Internal.ServiceFactoryAdapter`1.CreateServiceProvider(Object containerBuilder)
+   at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at CBT_WebApi.Program.Main(String[] args) in C:\Users\admin\source\repos\CBT_WebApi\CBT_WebApi\Program.cs:line 30
+2021-02-11 12:30:50.700 +01:00 [FTL] Application start-up failed
+System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: CBT_WebApi.Interfaces.ICandidateRepository Lifetime: Transient ImplementationType: CBT_WebApi.Repository.CandidateRepository': Unable to resolve service for type 'CBT_WebApi.Models.CbtAppDbContext' while attempting to activate 'CBT_WebApi.Repository.CandidateRepository'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: CBT_WebApi.Interfaces.ICandidateRepository Lifetime: Transient ImplementationType: CBT_WebApi.Repository.CandidateRepository': Unable to resolve service for type 'CBT_WebApi.Models.CbtAppDbContext' while attempting to activate 'CBT_WebApi.Repository.CandidateRepository'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'CBT_WebApi.Models.CbtAppDbContext' while attempting to activate 'CBT_WebApi.Repository.CandidateRepository'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type serviceType, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(IEnumerable`1 serviceDescriptors, IServiceProviderEngine engine, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(IEnumerable`1 serviceDescriptors, IServiceProviderEngine engine, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(IServiceCollection services, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.DefaultServiceProviderFactory.CreateServiceProvider(IServiceCollection containerBuilder)
+   at Microsoft.Extensions.Hosting.Internal.ServiceFactoryAdapter`1.CreateServiceProvider(Object containerBuilder)
+   at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at CBT_WebApi.Program.Main(String[] args) in C:\Users\admin\source\repos\CBT_WebApi\CBT_WebApi\Program.cs:line 30
+2021-02-11 12:30:58.399 +01:00 [FTL] Application start-up failed
+System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: CBT_WebApi.Interfaces.ICandidateRepository Lifetime: Transient ImplementationType: CBT_WebApi.Repository.CandidateRepository': Unable to resolve service for type 'CBT_WebApi.Models.CbtAppDbContext' while attempting to activate 'CBT_WebApi.Repository.CandidateRepository'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: CBT_WebApi.Interfaces.ICandidateRepository Lifetime: Transient ImplementationType: CBT_WebApi.Repository.CandidateRepository': Unable to resolve service for type 'CBT_WebApi.Models.CbtAppDbContext' while attempting to activate 'CBT_WebApi.Repository.CandidateRepository'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'CBT_WebApi.Models.CbtAppDbContext' while attempting to activate 'CBT_WebApi.Repository.CandidateRepository'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type serviceType, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(IEnumerable`1 serviceDescriptors, IServiceProviderEngine engine, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(IEnumerable`1 serviceDescriptors, IServiceProviderEngine engine, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(IServiceCollection services, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.DefaultServiceProviderFactory.CreateServiceProvider(IServiceCollection containerBuilder)
+   at Microsoft.Extensions.Hosting.Internal.ServiceFactoryAdapter`1.CreateServiceProvider(Object containerBuilder)
+   at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at CBT_WebApi.Program.Main(String[] args) in C:\Users\admin\source\repos\CBT_WebApi\CBT_WebApi\Program.cs:line 30
+2021-02-11 12:31:03.829 +01:00 [FTL] Application start-up failed
+System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: CBT_WebApi.Interfaces.ICandidateRepository Lifetime: Transient ImplementationType: CBT_WebApi.Repository.CandidateRepository': Unable to resolve service for type 'CBT_WebApi.Models.CbtAppDbContext' while attempting to activate 'CBT_WebApi.Repository.CandidateRepository'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: CBT_WebApi.Interfaces.ICandidateRepository Lifetime: Transient ImplementationType: CBT_WebApi.Repository.CandidateRepository': Unable to resolve service for type 'CBT_WebApi.Models.CbtAppDbContext' while attempting to activate 'CBT_WebApi.Repository.CandidateRepository'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'CBT_WebApi.Models.CbtAppDbContext' while attempting to activate 'CBT_WebApi.Repository.CandidateRepository'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(Type serviceType, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, Type serviceType, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, Type serviceType, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(IEnumerable`1 serviceDescriptors, IServiceProviderEngine engine, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(IEnumerable`1 serviceDescriptors, IServiceProviderEngine engine, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(IServiceCollection services, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.DefaultServiceProviderFactory.CreateServiceProvider(IServiceCollection containerBuilder)
+   at Microsoft.Extensions.Hosting.Internal.ServiceFactoryAdapter`1.CreateServiceProvider(Object containerBuilder)
+   at Microsoft.Extensions.Hosting.HostBuilder.CreateServiceProvider()
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at CBT_WebApi.Program.Main(String[] args) in C:\Users\admin\source\repos\CBT_WebApi\CBT_WebApi\Program.cs:line 30
+2021-02-11 12:36:36.632 +01:00 [ERR] Mesaage:
+ Invalid object name 'Candidates'.
+
+ Inner Exception:
+ N/A
+
+ Stacktrace:
+    at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__169_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.Tasks.Task.<>c.<.cctor>b__274_0(Object obj)
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(DbContext _, Boolean result, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at CBT_WebApi.Repository.CandidateRepository.GetCandidates() in C:\Users\admin\source\repos\CBT_WebApi\CBT_WebApi\Repository\CandidateRepository.cs:line 26
+ _______________________________________________________________________________________________________________________________________
+2021-02-11 13:30:42.766 +01:00 [ERR] Mesaage:
+ An error occurred while updating the entries. See the inner exception for details.
+
+ Inner Exception:
+ Invalid object name 'TestScores'.
+
+ Stacktrace:
+    at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(DbContext _, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at CBT_WebApi.Repository.CandidateRepository.AddCandidateTestScore(CandidateTestScoreDto candidateTestScoreDto) in C:\Users\admin\source\repos\CBT_WebApi\CBT_WebApi\Repository\CandidateRepository.cs:line 149
+ _______________________________________________________________________________________________________________________________________
